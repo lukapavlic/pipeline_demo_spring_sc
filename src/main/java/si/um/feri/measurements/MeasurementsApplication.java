@@ -20,7 +20,7 @@ public class MeasurementsApplication {
 	@Bean
 	public CommandLineRunner demo(ProductRepository daoProd, MeasurementRepository daoMeas) {
 		return args -> {
-			log.info("Ready, Set, Go!");
+			log.info("Redy, Set, Go!");
 			new MeasurementsRestServiceInit().populateTestDataIfNotPresent(daoProd,daoMeas);
 		};
 	}
